@@ -31,7 +31,13 @@ function randomText(min,max) {
   min = Math.ceil(min);
   max = Math
 }
-
+// let jiyeon = ["루빈이꺼"];
+// let rubin = {
+//   head: "sexy",
+//   body:"hot",
+//   foor:"bigfoot"
+// };
+console.log(rubin);
 // function getRandomInt(min,max) {
 //   min = Math.ceil(min);
 //   max = Math.floor(max);
