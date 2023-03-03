@@ -6,7 +6,7 @@ let studentObject = {
   "김은아":"굴",
   "김종윤":"오이",
   "김지섭":"술",
-  "김형진":"독버섯",
+  "김형진":"버섯",
   "노수민":"다리많은거",
   "류은이":"피망",
   "박달재":"벌레",
@@ -30,8 +30,19 @@ let studentObject = {
   //     console.log(a);
   //   }
   // }
+  let mushroomHate = ["정지은","김동주","김형진"]
+  for(let hater in studentObject) {
+    hater === Object.
+  }
+  // 만약 mushroomhate[i]가
+  let 
+  console.log(studentObject);
+  for(i in studentObject) {
+    // if(i===Object.values['버섯']) {
+    //   console.log(i);
+    
+    }
   
-   
   
 //   myCar['make'] = 'Ford';
 // myCar['model'] = 'Mustang';
@@ -43,17 +54,17 @@ let studentObject = {
 //     }
 //   }
   // 객체는 배열과 다르게 순서가 없어서 for문을 통해 조회가 불가능하다> 아래와 같은 태그로 배열의 키값들을 조회가 가능하다
-let keys = Object.keys(studentObject);
-// object.values를 사용하면 밸류값들도 조회 가능!
-console.log(keys)
+// let keys = Object.keys(studentObject);
+// // object.values를 사용하면 밸류값들도 조회 가능!
+// console.log(keys)
 
-// studentObject의 value값을 조회하기위해 배열을 가진 value라는 변수를 선언해줬다 그리고 for 문을 활용해 밸류값 조회도 가능하다
-const value = [];
-for(let i =0; i<keys.length;i++) {
-  const key = keys[i]
-  value[i] = studentObject[key];
-}
-console.log(value);
+// // studentObject의 value값을 조회하기위해 배열을 가진 value라는 변수를 선언해줬다 그리고 for 문을 활용해 밸류값 조회도 가능하다
+// const value = [];
+// for(let i =0; i<keys.length;i++) {
+//   const key = keys[i]
+//   value[i] = studentObject[key];
+// }
+// console.log(value);
 
 // const fruit = [];
 // fruit.apple='사과';

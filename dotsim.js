@@ -27,10 +27,10 @@ const randomNumFloor = Math.floor(randomNum)
 // 5아래의 숫자만 랜덤출력
  console.log(randomNumFloor);
 
-// function randomText(min,max) {
-//   min = Math.ceil(min);
-//   max = Math
-// }
+function randomText(min,max) {
+  min = Math.ceil(min);
+  max = Math
+}
 
 // function getRandomInt(min,max) {
 //   min = Math.ceil(min);
