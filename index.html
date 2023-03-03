@@ -24,7 +24,9 @@
     makeUl.style[ulStyleObject[0]] = "100px";
     makeUl.style[ulStyleObject[1]] = "100px";
     makeUl.style[ulStyleObject[2]] = "1px solid black";
-
+    for(i in root.style) {
+      console.log(i);
+    }
     // 위에거를 for문으로 돌려버리고자 했지만 border는 100px값을 원하지 않는다
     // for(let i = 0; i<ulStyleObject.length; i++) {
     //   makeUl.style[ulStyleObject[i]] = 
