@@ -25,6 +25,23 @@ let studentObject = {
   "한유진":"양파",
   "허진":"딸기",
   };
+  // for(let a in studentObject) {
+  //   if(a === Object.keys(studentObject)) {
+  //     console.log(a);
+  //   }
+  // }
+  
+   
+  
+//   myCar['make'] = 'Ford';
+// myCar['model'] = 'Mustang';
+// myCar['year'] = 1969;
+// console.log(myCar);
+//   for(let i in studentObject) {
+//     if(i === Object.keys('버섯')) {
+//       console.log('하')
+//     }
+//   }
   // 객체는 배열과 다르게 순서가 없어서 for문을 통해 조회가 불가능하다> 아래와 같은 태그로 배열의 키값들을 조회가 가능하다
 let keys = Object.keys(studentObject);
 // object.values를 사용하면 밸류값들도 조회 가능!
