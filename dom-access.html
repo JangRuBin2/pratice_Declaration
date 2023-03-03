@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <p></p>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    // for in문
+    // style값인건 확실하다. + 모르는 값도 있다
+    // console.log(typeof(root.style));
+    // for(let junBro in root.style) {
+    //   console.log(junBro); 
+    //   // 위처럼 콘솔찍어보면 css요소들이 나옴 ㄷㄷ
+    //   // 와 소름끼쳐 객체 조회를 통해서 width값이 있으면 100px 넣어주고 없으면 넣지말란거 ㄷㄷ
+    //   if(junBro==="width") {
+    //     junBro ==="100px";
+    //   }
+    //   else {
+    //     console.error("없어 짜샤");
+    //   }
+
+    // }
+    
+    let sss = Object.keys(root).includes.toString
+    console.log(sss);
+    for(let P in root) {
+      
+    }
+    // if(P === "p") {
+    //   p==="안녕";
+    // }
+  </script>
+</body>
+</html>
