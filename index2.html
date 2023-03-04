@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div id="root"></div>
+    <script>
+        const root = document.getElementById("root");
+
+        let div = document.createElement('div');
+        div.textContent = "디비전 생성입니다";
+        div.setAttribute("id","children");
+        root.appendChild(div);
+        
+        // div.style.backgroundColor = 'red';
+        // div.style.width = '100px';
+        // div.style.height = '100px';
+        // >이와 같이 js를 활용해 동적으로 style을 적용할 때 DOM객체에 접근해
+        // 하나하나 값을 넣어줬었다 
+        
+        let divStyle = ["backgroundColor","width","height"];
+        // div.style[divStyle[0]]="red"
+        // div.style[divStyle[1]]="100px"
+        // div.style[divStyle[2]]="100px"
+        console.log(divStyle.length);
+        let divStyleValue = ["red","100px","100px"];
+        let where = div.style;
+        // where[divStyle[0]]=divStyleValue[0];
+        // where[divStyle[1]]=divStyleValue[1];
+        // where[divStyle[2]]=divStyleValue[2];
+        // for(let i=0; i<divStyle.length; i++) {
+        //     // console.log('gk');
+        //     div.style[divStyle[i]]=divStyleValue[i];
+        // }
+
+        let styleBox = {
+            styleKey : ["backgroundColor","width","height"],
+            styleValue : ["red","100px","100px"]
+        }
+        function arrayStyling(styleKey,styleValue) {
+            for(let i=0; i<styleKey.length; i++) {
+                div.style[styleKey[i]]=styleValue[i];
+            }
+        }
+        arrayStyling(divStyle,divStyleValue);
+    //   function styleChange(what,how) {
+    //     what.display = how
+    //   }
+    //   let divPlzChange = ["display","flex"];
+    //   styleChange(where,divPlzChange);
+
+    //   function styleBox() {
+      
+    //   }
+        
+    </script>
+ </body>
+ </html>

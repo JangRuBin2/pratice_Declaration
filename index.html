@@ -11,49 +11,44 @@
 
   <script>
     // ul태그를 생성 한 후에 동적으로 일일히 스타일링 적용했다
-    const root = document.getElementById('root');
-    const makeUl = document.createElement('ul');
-    // makeUl.style.border = '1px solid black';
-    // // makeUl.style.width='100px'
-    // makeUl.style.height='100px'
-    root.appendChild(makeUl);
+  //   const root = document.getElementById('root');
+  //   const makeUl = document.createElement('ul');
+  //   // makeUl.style.border = '1px solid black';
+  //   // // makeUl.style.width='100px'
+  //   // makeUl.style.height='100px'
+  //   root.appendChild(makeUl);
 
-      // 이런식으로도 된다
-    const ulStyleObject =["width","height","border"];
-   let styleSelect = ["100px","100px","1px solid black"]
-    
-    for(let i=0; i<ulStyleObject.length; i++) {
-      makeUl.style[ulStyleObject[i]]= styleSelect[i]
-    }
-    console.dir()
-    // makeUl.style[ulStyleObject[0]] = "100px";
-    // makeUl.style[ulStyleObject[1]] = "100px";
-    // makeUl.style[ulStyleObject[2]] = "1px solid black";
-    // for(i in root.style) {
-    //   console.log(i);
-    // }
-    // 위에거를 for문으로 돌려버리고자 했지만 border는 100px값을 원하지 않는다
-    // for(let i = 0; i<ulStyleObject.length; i++) {
-    //   makeUl.style[ulStyleObject[i]] = 
-    //   ulStyleValue[i]
-    // }
-    // 그러면 아래와 같이 추가해보자
-    // const ulStyleValue = ["100px","100px","1px solid black"]
-    // let domStyle = {
-    //   firstArray: ["width","height","border"],
-    //   secondArray:["100px","100px","1px solid black"],
-    //   element : root.children[0]
-    // }
-    // // 그 후에 함수 생성
-    // function twoArrayDomStyling(firstArray,secondArray,element) {
-    //   for(let i = 0; i<ulStyleObject.length; i++) {
-    //   element.style[firstArray[i]] = 
-    //   secondArray[i]
-    // }
-    // }
-    // twoArrayDomStyling(ulStyleObject,ulStyleValue,makeUl);
+  //     // 이런식으로도 된다
+  //   const ulStyleObject =["width","height","border"];
+  //  let styleSelect = ["100px","100px","1px solid black"]
+  //   // makeUl.style[ulStyleObject[0]] = "100px";
+  //   // makeUl.style[ulStyleObject[1]] = "100px";
+  //   // makeUl.style[ulStyleObject[2]] = "1px solid black";
+  //   // for(i in root.style) {
+  //   //   console.log(i);
+  //   // }
+  //   // 위에거를 for문으로 돌려버리고자 했지만 border는 100px값을 원하지 않는다
+  //   for(let i = 0; i<ulStyleObject.length; i++) {
+  //     makeUl.style[ulStyleObject[i]] = 
+  //     ulStyleValue[i]
+  //   }
+  //   // // 그러면 아래와 같이 추가해보자
+  //   // const ulStyleValue = ["100px","100px","1px solid black"]
+  //   let domStyle = {
+  //     firstArray: ["width","height","border"],
+  //     secondArray:["100px","100px","1px solid black"],
+  //     element : root.children[0]
+  //   }
+  //   // // 그 후에 함수 생성
+  //   function twoArrayDomStyling(firstArray,secondArray,element) {
+  //     for(let i = 0; i<ulStyleObject.length; i++) {
+  //     element.style[firstArray[i]] = 
+  //     secondArray[i]
+  //   }
+  //   }
+  //   twoArrayDomStyling(ulStyleObject,ulStyleValue,makeUl);
 
-    // // 두번째 방법
+  //   // // 두번째 방법
     // function oneObjectDomStyling(object) {
     //   for(let i = 0; i<object.firstArray; i++) {
     //   object.style[object.firstArray[i]] = 
@@ -62,10 +57,17 @@
     // }
       
 
-     
-        let div = document.createElement('div');
-        div.setAttribute("id","nono");
-        root.appendChild(div);
+      function sksk(element) {
+        let createEl = document.createElement(element);
+        createEl.textContent="아"
+        root.appendChild(createEl);
+      };
+        
+        console.dir(createEl);
+        let what = ["div"]
+        sksk(what)
+
+
      
       
     
